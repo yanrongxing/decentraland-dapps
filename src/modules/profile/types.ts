@@ -1,4 +1,4 @@
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@yanrongxing/schemas'
 
 export type Profile = {
   avatars: Avatar[]

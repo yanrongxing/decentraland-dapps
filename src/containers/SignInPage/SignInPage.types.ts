@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux'
-import { ProviderType } from '@dcl/schemas/dist/dapps/provider-type'
+import { ProviderType } from '@yanrongxing/schemas/dist/dapps/provider-type'
 import { SignInProps } from 'decentraland-ui/dist/components/SignIn/SignIn'
 import { EnableWalletRequestAction } from '../../modules/wallet/actions'
 

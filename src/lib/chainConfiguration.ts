@@ -1,5 +1,5 @@
-import { ChainId } from '@dcl/schemas/dist/dapps/chain-id'
-import { Network } from '@dcl/schemas/dist/dapps/network'
+import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
+import { Network } from '@yanrongxing/schemas/dist/dapps/network'
 import { RPC_URLS } from 'decentraland-connect/dist/connectors/NetworkConnector'
 
 export const MANA_GRAPH_BY_CHAIN_ID = {

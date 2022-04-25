@@ -3,7 +3,7 @@ import { Popup } from 'decentraland-ui/dist/components/Popup/Popup'
 import { T } from '../../modules/translation/utils'
 import { getChainIdByNetwork, getConnectedProviderChainId } from '../../lib/eth'
 import { Props } from './NetworkCheck.types'
-import { getChainName } from '@dcl/schemas/dist/dapps/chain-id'
+import { getChainName } from '@yanrongxing/schemas/dist/dapps/chain-id'
 import ChainProvider from '../ChainProvider'
 
 export default class ChainCheck extends React.PureComponent<Props> {

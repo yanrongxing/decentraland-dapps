@@ -1,8 +1,8 @@
 import { connection, Provider } from 'decentraland-connect'
-import { ChainId } from '@dcl/schemas/dist/dapps/chain-id'
-import { Network } from '@dcl/schemas/dist/dapps/network'
+import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
+import { Network } from '@yanrongxing/schemas/dist/dapps/network'
 import { providers } from 'ethers'
-import { ProviderType } from '@dcl/schemas/dist/dapps/provider-type'
+import { ProviderType } from '@yanrongxing/schemas/dist/dapps/provider-type'
 import { getChainConfiguration } from './chainConfiguration'
 import { isMobile } from './utils'
 

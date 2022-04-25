@@ -1,7 +1,7 @@
 import { EntityType, EntityVersion } from 'dcl-catalyst-commons/dist/types'
 import { ProfileEntity } from '../lib/types'
 import { Profile } from '../modules/profile/types'
-import { Avatar } from '@dcl/schemas'
+import { Avatar } from '@yanrongxing/schemas'
 
 export const avatar: Avatar = {
   userId: 'userId',

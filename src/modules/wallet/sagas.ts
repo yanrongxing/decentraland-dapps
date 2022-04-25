@@ -10,7 +10,7 @@ import {
   select,
   fork
 } from 'redux-saga/effects'
-import { ChainId } from '@dcl/schemas/dist/dapps/chain-id'
+import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
 import { connection, Provider } from 'decentraland-connect'
 import {
   getConnectedProvider,

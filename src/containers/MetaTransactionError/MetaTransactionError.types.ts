@@ -1,6 +1,6 @@
 import React from 'react'
 import { Dispatch } from 'redux'
-import { ChainId } from '@dcl/schemas'
+import { ChainId } from '@yanrongxing/schemas'
 
 export type Props = {
   text: React.ReactNode

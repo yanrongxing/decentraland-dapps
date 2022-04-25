@@ -6,7 +6,7 @@ import {
   LoginModalOptionI18N,
   LoginModalOptionType
 } from 'decentraland-ui/dist/components/LoginModal/LoginModal'
-import { ProviderType } from '@dcl/schemas/dist/dapps/provider-type'
+import { ProviderType } from '@yanrongxing/schemas/dist/dapps/provider-type'
 import { T, t } from '../../modules/translation/utils'
 import { DefaultProps, Props, State } from './LoginModal.types'
 import { toModalOptionType, toProviderType } from './utils'
