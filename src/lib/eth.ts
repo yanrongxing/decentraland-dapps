@@ -1,4 +1,4 @@
-import { connection, Provider } from 'decentraland-connect'
+import { connection, Provider } from '@yanrongxing/connect'
 import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
 import { Network } from '@yanrongxing/schemas/dist/dapps/network'
 import { providers } from 'ethers'

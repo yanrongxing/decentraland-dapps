@@ -11,7 +11,7 @@ import {
   fork
 } from 'redux-saga/effects'
 import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
-import { connection, Provider } from 'decentraland-connect'
+import { connection, Provider } from '@yanrongxing/connect'
 import {
   getConnectedProvider,
   isCucumberProvider,

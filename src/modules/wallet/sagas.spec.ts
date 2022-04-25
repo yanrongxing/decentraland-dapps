@@ -2,7 +2,7 @@ import { expectSaga } from 'redux-saga-test-plan'
 import * as matchers from 'redux-saga-test-plan/matchers'
 import { call } from 'redux-saga/effects'
 import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
-import { Provider } from 'decentraland-connect'
+import { Provider } from '@yanrongxing/connect'
 import { createWalletSaga } from './sagas'
 import {
   switchNetworkFailure,

@@ -1,6 +1,6 @@
 import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
 import { Network } from '@yanrongxing/schemas/dist/dapps/network'
-import { RPC_URLS } from 'decentraland-connect/dist/connectors/NetworkConnector'
+import { RPC_URLS } from '@yanrongxing/connect/dist/connectors/NetworkConnector'
 
 export const MANA_GRAPH_BY_CHAIN_ID = {
   [ChainId.ETHEREUM_MAINNET]:
@@ -14,6 +14,12 @@ export const MANA_GRAPH_BY_CHAIN_ID = {
   [ChainId.MATIC_MAINNET]:
     'https://api.thegraph.com/subgraphs/name/decentraland/mana-matic-mainnet',
   [ChainId.MATIC_MUMBAI]:
+    'https://api.thegraph.com/subgraphs/name/decentraland/mana-matic-mumbai',
+  [ChainId.BSC_MAIN]:
+    'https://api.thegraph.com/subgraphs/name/decentraland/mana-ethereum-rinkeby',
+  [ChainId.BSC_TEST]:
+    'https://api.thegraph.com/subgraphs/name/decentraland/mana-matic-mainnet',
+  [ChainId.TEST]:
     'https://api.thegraph.com/subgraphs/name/decentraland/mana-matic-mumbai'
 }
 
@@ -41,17 +47,32 @@ const NETWORK_MAPPING_BY_CHAIN_ID = {
   [ChainId.MATIC_MUMBAI]: {
     [Network.ETHEREUM]: ChainId.MATIC_MUMBAI,
     [Network.MATIC]: ChainId.MATIC_MUMBAI
+  },
+  [ChainId.BSC_MAIN]: {
+    [Network.ETHEREUM]: ChainId.BSC_MAIN,
+    [Network.MATIC]: ChainId.BSC_MAIN
+  },
+  [ChainId.BSC_TEST]: {
+    [Network.ETHEREUM]: ChainId.BSC_TEST,
+    [Network.MATIC]: ChainId.BSC_TEST
+  },
+  [ChainId.TEST]: {
+    [Network.ETHEREUM]: ChainId.TEST,
+    [Network.MATIC]: ChainId.TEST
   }
 }
 
 const NETWORK_BY_CHAIN_ID: Record<ChainId, Network> = {
+  [ChainId.TEST]: Network.ETHEREUM,
   [ChainId.ETHEREUM_MAINNET]: Network.ETHEREUM,
   [ChainId.ETHEREUM_ROPSTEN]: Network.ETHEREUM,
   [ChainId.ETHEREUM_GOERLI]: Network.ETHEREUM,
   [ChainId.ETHEREUM_KOVAN]: Network.ETHEREUM,
   [ChainId.ETHEREUM_RINKEBY]: Network.ETHEREUM,
   [ChainId.MATIC_MAINNET]: Network.MATIC,
-  [ChainId.MATIC_MUMBAI]: Network.MATIC
+  [ChainId.MATIC_MUMBAI]: Network.MATIC,
+  [ChainId.BSC_MAIN]: Network.BSC,
+  [ChainId.BSC_TEST]: Network.BSC,
 }
 
 type ChainConfiguration = {

@@ -1,8 +1,8 @@
 import { put, call, takeEvery } from 'redux-saga/effects'
 import { providers } from '@0xsequence/multicall'
 import { providers as ethersProviders, Contract, BigNumber } from 'ethers'
-import { Provider } from 'decentraland-connect/dist/types'
-import { ContractData, getContract } from 'decentraland-transactions'
+import { Provider } from '@yanrongxing/connect/dist/types'
+import { ContractData, getContract } from '@yanrongxing/transactions'
 import { getNetworkProvider } from '../../lib/eth'
 import { getTokenAmountToApprove, isValidType } from './utils'
 import {

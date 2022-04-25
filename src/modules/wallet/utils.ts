@@ -7,7 +7,7 @@ import {
   ContractName,
   getContract,
   sendMetaTransaction
-} from 'decentraland-transactions'
+} from '@yanrongxing/transactions'
 import { ChainId, getChainName } from '@yanrongxing/schemas/dist/dapps/chain-id'
 import {
   getConnectedProvider,
@@ -163,13 +163,13 @@ export async function sendTransaction(...args: any[]) {
 
     // populate the transaction data
     const unsignedTx = await (typeof contractMethodNameOrGetPopulatedTransaction ===
-    'function'
+      'function'
       ? contractMethodNameOrGetPopulatedTransaction(
-          contractInstance.populateTransaction
-        )
+        contractInstance.populateTransaction
+      )
       : contractInstance.populateTransaction[
-          contractMethodNameOrGetPopulatedTransaction
-        ](...contractArguments))
+        contractMethodNameOrGetPopulatedTransaction
+      ](...contractArguments))
 
     // if the connected provider is in the target network, use it to sign and send the tx
     if (chainId === contract.chainId) {
