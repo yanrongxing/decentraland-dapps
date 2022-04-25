@@ -1,5 +1,5 @@
 import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
-import { ContractName } from '@yanrongxing/transactions'
+import { ContractName } from 'decentraland-transactions'
 
 export enum AuthorizationType {
   ALLOWANCE = 'allowance',

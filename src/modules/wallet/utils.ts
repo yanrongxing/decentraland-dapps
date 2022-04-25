@@ -7,7 +7,7 @@ import {
   ContractName,
   getContract,
   sendMetaTransaction
-} from '@yanrongxing/transactions'
+} from 'decentraland-transactions'
 import { ChainId, getChainName } from '@yanrongxing/schemas/dist/dapps/chain-id'
 import {
   getConnectedProvider,

@@ -1,4 +1,4 @@
-import { ContractData, sendMetaTransaction } from '@yanrongxing/transactions'
+import { ContractData, sendMetaTransaction } from 'decentraland-transactions'
 import { providers } from 'ethers'
 import { getConnectedProvider, getNetworkProvider } from '../../lib/eth'
 import {
@@ -8,7 +8,7 @@ import {
 import { getTransactionsApiUrl, sendTransaction } from './utils'
 
 jest.mock('../../lib/eth')
-jest.mock('@yanrongxing/transactions')
+jest.mock('decentraland-transactions')
 const mockedGetConnectedProvider: jest.Mock<typeof getConnectedProvider> = getConnectedProvider as any
 const mockedGetNetworkProvider: jest.Mock<typeof getNetworkProvider> = getNetworkProvider as any
 const mockedSendMetaTransaction: jest.Mock<typeof sendMetaTransaction> = sendMetaTransaction as any
