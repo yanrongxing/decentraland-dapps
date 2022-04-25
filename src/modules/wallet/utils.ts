@@ -232,6 +232,42 @@ export function getAddEthereumChainParameters(
         rpcUrls: ['https://rpc-mumbai.maticvigil.com/'],
         blockExplorerUrls: ['https://mumbai.polygonscan.com/']
       }
+    case ChainId.BSC_MAINNET:
+      return {
+        chainId: hexChainId,
+        chainName,
+        nativeCurrency: {
+          name: 'BSC',
+          symbol: 'BSC',
+          decimals: 18
+        },
+        rpcUrls: ['https://rpc.ankr.com/bsc'],
+        blockExplorerUrls: ['https://bscscan.com']
+      }
+    case ChainId.BSC_TEST:
+      return {
+        chainId: hexChainId,
+        chainName,
+        nativeCurrency: {
+          name: 'BSC TEST',
+          symbol: 'BSC TEST',
+          decimals: 18
+        },
+        rpcUrls: ['https://speedy-nodes-nyc.moralis.io/411cc780a17540f9cca24e55/bsc/testnet'],
+        blockExplorerUrls: ['https://testnet.bscscan.com']
+      }
+    case ChainId.TEST:
+      return {
+        chainId: hexChainId,
+        chainName,
+        nativeCurrency: {
+          name: 'TEST',
+          symbol: 'TEST',
+          decimals: 18
+        },
+        rpcUrls: ['http://217.174.153.45:8545/'],
+        blockExplorerUrls: ['http://217.174.153.45:4000/']
+      }
     case ChainId.ETHEREUM_MAINNET:
     case ChainId.ETHEREUM_ROPSTEN:
     case ChainId.ETHEREUM_RINKEBY:
