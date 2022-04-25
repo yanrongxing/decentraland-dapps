@@ -1,5 +1,5 @@
 {
-  "name": "decentraland-dapps",
+  "name": "@yanrongxing/dapps",
   "version": "0.0.4",
   "dependencies": {
     "@0xsequence/multicall": "^0.25.1",
