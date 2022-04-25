@@ -15,7 +15,7 @@ export const MANA_GRAPH_BY_CHAIN_ID = {
     'https://api.thegraph.com/subgraphs/name/decentraland/mana-matic-mainnet',
   [ChainId.MATIC_MUMBAI]:
     'https://api.thegraph.com/subgraphs/name/decentraland/mana-matic-mumbai',
-  [ChainId.BSC_MAIN]:
+  [ChainId.BSC_MAINNET]:
     'https://api.thegraph.com/subgraphs/name/decentraland/mana-ethereum-rinkeby',
   [ChainId.BSC_TEST]:
     'https://api.thegraph.com/subgraphs/name/decentraland/mana-matic-mainnet',
@@ -48,9 +48,9 @@ const NETWORK_MAPPING_BY_CHAIN_ID = {
     [Network.ETHEREUM]: ChainId.MATIC_MUMBAI,
     [Network.MATIC]: ChainId.MATIC_MUMBAI
   },
-  [ChainId.BSC_MAIN]: {
-    [Network.ETHEREUM]: ChainId.BSC_MAIN,
-    [Network.MATIC]: ChainId.BSC_MAIN
+  [ChainId.BSC_MAINNET]: {
+    [Network.ETHEREUM]: ChainId.BSC_MAINNET,
+    [Network.MATIC]: ChainId.BSC_MAINNET
   },
   [ChainId.BSC_TEST]: {
     [Network.ETHEREUM]: ChainId.BSC_TEST,
@@ -71,7 +71,7 @@ const NETWORK_BY_CHAIN_ID: Record<ChainId, Network> = {
   [ChainId.ETHEREUM_RINKEBY]: Network.ETHEREUM,
   [ChainId.MATIC_MAINNET]: Network.MATIC,
   [ChainId.MATIC_MUMBAI]: Network.MATIC,
-  [ChainId.BSC_MAIN]: Network.BSC,
+  [ChainId.BSC_MAINNET]: Network.BSC,
   [ChainId.BSC_TEST]: Network.BSC,
 }
 
