@@ -1,8 +1,8 @@
 import * as React from 'react'
 
-import { Button } from 'decentraland-ui/dist/components/Button/Button'
-import { ModalNavigation } from 'decentraland-ui/dist/components/ModalNavigation/ModalNavigation'
-import { Navbar as NavbarComponent, NavbarI18N } from 'decentraland-ui/dist/components/Navbar/Navbar'
+import { Button } from '@yanrongxing/ui/dist/components/Button/Button'
+import { ModalNavigation } from '@yanrongxing/ui/dist/components/ModalNavigation/ModalNavigation'
+import { Navbar as NavbarComponent, NavbarI18N } from '@yanrongxing/ui/dist/components/Navbar/Navbar'
 import { ProviderType } from '@yanrongxing/schemas/dist/dapps/provider-type'
 import { getChainName } from '@yanrongxing/schemas/dist/dapps/chain-id'
 import {

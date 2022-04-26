@@ -1,7 +1,7 @@
 import { call, select, take } from 'redux-saga/effects'
 import * as matchers from 'redux-saga-test-plan/matchers'
 import { expectSaga } from 'redux-saga-test-plan'
-import { ErrorCode } from 'decentraland-transactions'
+import { ErrorCode } from '@yanrongxing/transactions'
 import { ChainId } from '@yanrongxing/schemas'
 import { switchNetworkSuccess } from '../wallet/actions'
 import {

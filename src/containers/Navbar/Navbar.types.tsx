@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux'
 import { ChainId } from '@yanrongxing/schemas/dist/dapps/chain-id'
-import { NavbarProps as NavbarComponentProps } from 'decentraland-ui/dist/components/Navbar/Navbar'
+import { NavbarProps as NavbarComponentProps } from '@yanrongxing/ui/dist/components/Navbar/Navbar'
 import {
   acceptNetworkPartialSupport,
   AcceptNetworkPartialSupportAction,

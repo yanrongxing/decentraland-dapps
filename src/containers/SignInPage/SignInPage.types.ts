@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux'
 import { ProviderType } from '@yanrongxing/schemas/dist/dapps/provider-type'
-import { SignInProps } from 'decentraland-ui/dist/components/SignIn/SignIn'
+import { SignInProps } from '@yanrongxing/ui/dist/components/SignIn/SignIn'
 import { EnableWalletRequestAction } from '../../modules/wallet/actions'
 
 export type SignInPageProps = Omit<SignInProps, 'onConnect'> & {

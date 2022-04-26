@@ -1,6 +1,6 @@
 import { EventChannel, eventChannel } from 'redux-saga'
 import { call, fork, put, select, take, takeEvery } from 'redux-saga/effects'
-import { ErrorCode, MetaTransactionError } from 'decentraland-transactions'
+import { ErrorCode, MetaTransactionError } from '@yanrongxing/transactions'
 import {
   renderToast,
   ShowToastAction,

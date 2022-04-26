@@ -1,5 +1,5 @@
 import { ProviderType } from '@yanrongxing/schemas/dist/dapps/provider-type'
-import { LoginModalOptionType } from 'decentraland-ui/dist/components/LoginModal/LoginModal'
+import { LoginModalOptionType } from '@yanrongxing/ui/dist/components/LoginModal/LoginModal'
 import {
   isCoinbaseProvider,
   isCucumberProvider,
