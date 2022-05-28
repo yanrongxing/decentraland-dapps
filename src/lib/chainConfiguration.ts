@@ -58,12 +58,14 @@ const NETWORK_MAPPING_BY_CHAIN_ID = {
   },
   [ChainId.TEST]: {
     [Network.ETHEREUM]: ChainId.TEST,
-    [Network.MATIC]: ChainId.TEST
+    [Network.MATIC]: ChainId.TEST,
+    [Network.BSC]: ChainId.TEST,
+    [Network.TEST]: ChainId.TEST
   }
 }
 
 const NETWORK_BY_CHAIN_ID: Record<ChainId, Network> = {
-  [ChainId.TEST]: Network.ETHEREUM,
+  [ChainId.TEST]: Network.TEST,
   [ChainId.ETHEREUM_MAINNET]: Network.ETHEREUM,
   [ChainId.ETHEREUM_ROPSTEN]: Network.ETHEREUM,
   [ChainId.ETHEREUM_GOERLI]: Network.ETHEREUM,
