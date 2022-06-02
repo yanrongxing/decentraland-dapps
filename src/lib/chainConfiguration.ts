@@ -42,15 +42,18 @@ const NETWORK_MAPPING_BY_CHAIN_ID = {
   },
   [ChainId.MATIC_MAINNET]: {
     [Network.ETHEREUM]: ChainId.MATIC_MAINNET,
-    [Network.MATIC]: ChainId.MATIC_MAINNET
+    [Network.MATIC]: ChainId.MATIC_MAINNET,
+    [Network.BSC]: ChainId.MATIC_MAINNET,
+    [Network.TEST]: ChainId.MATIC_MAINNET
   },
   [ChainId.MATIC_MUMBAI]: {
-    [Network.ETHEREUM]: ChainId.MATIC_MUMBAI,
     [Network.MATIC]: ChainId.MATIC_MUMBAI
   },
   [ChainId.BSC_MAINNET]: {
     [Network.ETHEREUM]: ChainId.BSC_MAINNET,
-    [Network.MATIC]: ChainId.BSC_MAINNET
+    [Network.MATIC]: ChainId.BSC_MAINNET,
+    [Network.BSC]: ChainId.BSC_MAINNET,
+    [Network.TEST]: ChainId.BSC_MAINNET
   },
   [ChainId.BSC_TEST]: {
     [Network.ETHEREUM]: ChainId.BSC_TEST,
